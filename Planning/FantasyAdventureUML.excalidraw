@@ -3224,14 +3224,14 @@
       "boundElements": null,
       "updated": 1645005008705,
       "link": null,
-      "text": "ArrayList<Item> itemStock\nArrayList<Weapon> weaponStock",
+      "text": "ArrayList<Item> itemStock\nArrayList<Items.Weapon.Weapon> weaponStock",
       "fontSize": 20,
       "fontFamily": 1,
       "textAlign": "left",
       "verticalAlign": "top",
       "baseline": 43,
       "containerId": null,
-      "originalText": "ArrayList<Item> itemStock\nArrayList<Weapon> weaponStock"
+      "originalText": "ArrayList<Item> itemStock\nArrayList<Items.Weapon.Weapon> weaponStock"
     },
     {
       "type": "rectangle",
@@ -6369,12 +6369,12 @@
       "link": null,
       "fontSize": 20,
       "fontFamily": 1,
-      "text": "Weapon",
+      "text": "Items.Weapon.Weapon",
       "baseline": 18,
       "textAlign": "left",
       "verticalAlign": "top",
       "containerId": null,
-      "originalText": "Weapon"
+      "originalText": "Items.Weapon.Weapon"
     },
     {
       "type": "text",

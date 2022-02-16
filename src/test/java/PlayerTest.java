@@ -19,7 +19,7 @@ public class PlayerTest {
     @Before
     public void before(){
 
-        weapon = new Weapon(WeaponType.BROOM, 10);
+        weapon = new Weapon(WeaponType.BROOM);
         jerry = new Jerry();
         player = new Player(jerry);
     }
@@ -34,7 +34,7 @@ public class PlayerTest {
     public void canSwapWeapon(){
         player.equipWeapon(weapon);
         assertEquals(weapon, player.getEquippedWeapon());
-        Weapon newWeapon = new Weapon(WeaponType.BROOM, 10);
+        Weapon newWeapon = new Weapon(WeaponType.BROOM);
         player.equipWeapon(newWeapon);
         assertEquals(newWeapon, player.getEquippedWeapon());
         assertEquals(1, player.inventoryCount());
@@ -43,7 +43,7 @@ public class PlayerTest {
 
     @Test
     public void canNotEquipWeaponOfDifferentType(){
-        Weapon newWeapon = new Weapon(WeaponType.PAN, 10);
+        Weapon newWeapon = new Weapon(WeaponType.PAN);
         player.equipWeapon(newWeapon);
         assertNull(player.getEquippedWeapon());
     }
@@ -54,10 +54,12 @@ public class PlayerTest {
         assertEquals(1, player.inventoryCount());
     }
 
-//    @Test
-//    public void canEat(){
-//        player.eat();
-//    }
+    @Test
+    public void canEatCheese(){
+        Cheese cheese = new Cheese(3);
+        player.eat(cheese);
+        assertEquals(110, player.getHealth());
+    }
 
 
 

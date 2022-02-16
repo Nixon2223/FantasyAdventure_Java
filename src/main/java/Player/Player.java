@@ -1,6 +1,8 @@
 package Player;
 
 import Items.Food.Cheese;
+import Items.Food.Food;
+import Items.Food.IHeal;
 import Items.Item;
 import Items.Weapon.Weapon;
 import Player.Heros.IHero;
@@ -34,13 +36,17 @@ public class Player {
         }
     }
 
+    public void eat(IHeal consumable){
+        health += consumable.getHeal();
+    }
+
     public int inventoryCount(){
         return inventory.size();
     }
 
     public void useAbility(){
         if (hero instanceof Jerry) {
-            this.inventory.add(new Cheese(3, 5));
+            this.inventory.add(new Cheese(3));
         }
     }
 

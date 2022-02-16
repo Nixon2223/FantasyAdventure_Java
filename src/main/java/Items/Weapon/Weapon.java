@@ -4,11 +4,9 @@ import Items.Item;
 
 public class Weapon extends Item {
     private WeaponType weaponType;
-    private int price;
 
 
-    public Weapon(WeaponType weaponType, int price) {
-        super(price);
+    public Weapon(WeaponType weaponType) {
         this.weaponType = weaponType;
     }
 
@@ -16,7 +14,4 @@ public class Weapon extends Item {
         return weaponType.getType();
     }
 
-    public int getPrice() {
-        return price;
-    }
 }

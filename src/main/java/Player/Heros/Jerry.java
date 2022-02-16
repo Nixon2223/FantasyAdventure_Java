@@ -40,6 +40,6 @@ public class Jerry implements IHero{
 
     }
     public Cheese findCheese(){
-        return new Cheese(3, 10);
+        return new Cheese(3);
     }
 }

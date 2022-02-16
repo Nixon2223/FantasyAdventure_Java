@@ -60,6 +60,7 @@ public class PlayerTest {
         player.eat(cheese);
         assertEquals(110, player.getHealth());
         assertEquals(2, cheese.getQuantity());
+
     }
 
 

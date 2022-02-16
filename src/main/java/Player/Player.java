@@ -2,6 +2,7 @@ package Player;
 
 import Items.Item;
 import Items.Weapon.Weapon;
+import Player.Heros.Hero;
 
 import java.util.ArrayList;
 

@@ -13,6 +13,10 @@ public enum WeaponType {
         this.type = type;
     }
 
+    public String getType() {
+        return type;
+    }
+
     public int getBaseDamage() {
         return baseDamage;
     }

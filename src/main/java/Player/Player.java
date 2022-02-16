@@ -24,6 +24,16 @@ public class Player {
         this.health = 100;
     }
 
+
+    public void equipWeapon(Weapon weapon){
+        if (this.equippedWeapon != null) this.inventory.add(this.equippedWeapon);
+        this.equippedWeapon = weapon;
+    }
+
+    public int inventoryCount(){
+        return inventory.size();
+    }
+
     public void setHero(Hero hero) {
         this.hero = hero;
     }

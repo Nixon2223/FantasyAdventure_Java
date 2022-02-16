@@ -11,8 +11,7 @@ public abstract class Hero {
     private int agility;
     private int defence;
 
-    public Hero(Weapon weapon, int strength, int agility, int defence) {
-        this.weapon = weapon;
+    public Hero(int strength, int agility, int defence) {
         this.strength = strength;
         this.agility = agility;
         this.defence = defence;
@@ -20,10 +19,6 @@ public abstract class Hero {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public void setWeaponType(ArrayList<String> weaponType) {
-        this.weaponType = weaponType;
     }
 
     public void setStrength(int strength) {
@@ -40,10 +35,6 @@ public abstract class Hero {
 
     public String getName() {
         return name;
-    }
-
-    public ArrayList<String> getWeaponType() {
-        return weaponType;
     }
 
     public int getStrength() {

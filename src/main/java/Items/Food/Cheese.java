@@ -10,7 +10,7 @@ public class Cheese extends Food {
     }
 
     public void eat(Player player) {
-        return null;
+
     }
 
 }

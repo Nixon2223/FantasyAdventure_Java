@@ -6,8 +6,8 @@ import Items.Weapon.Weapon;
 import java.util.ArrayList;
 
 public class Jerry extends Hero{
-    public Jerry(Weapon weaponType, int strength, int agility, int defence) {
-        super(weaponType, strength, agility, defence);
+    public Jerry(int strength, int agility, int defence) {
+        super(strength, agility, defence);
     }
 
         public Cheese findCheese(){

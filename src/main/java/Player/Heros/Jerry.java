@@ -5,12 +5,41 @@ import Items.Weapon.Weapon;
 
 import java.util.ArrayList;
 
-public class Jerry extends Hero{
-    public Jerry(int strength, int agility, int defence) {
-        super(strength, agility, defence);
+
+public class Jerry implements IHero{
+
+
+    private ArrayList<String> weaponTypes;
+    private int strength;
+    private int agility;
+    private int defense;
+
+    public Jerry() {
+        this.weaponTypes = new ArrayList<String>();
+        this.weaponTypes.add("broom");
+        this.strength = 5;
+        this.agility = 7;
+        this.defense = 10;
     }
 
-        public Cheese findCheese(){
-            return new Cheese(3, 10);
-        }
+    public ArrayList<String> getWeaponTypes() {
+        return weaponTypes;
     }
+    public int getStrength() {
+        return strength;
+    }
+    public int getAgility() {
+        return agility;
+    }
+
+    public int getDefence() {
+        return defense;
+    }
+
+    public void getAbility() {
+
+    }
+    public Cheese findCheese(){
+        return new Cheese(3, 10);
+    }
+}

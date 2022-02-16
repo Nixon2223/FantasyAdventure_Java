@@ -3,21 +3,21 @@ package Player;
 import Items.Food.Cheese;
 import Items.Item;
 import Items.Weapon.Weapon;
-import Player.Heros.Hero;
+import Player.Heros.IHero;
 import Player.Heros.Jerry;
 
 import java.util.ArrayList;
 
 public class Player {
 
-    private Hero hero;
+    private IHero hero;
     private int level;
     private int gold;
     private ArrayList<Item> inventory;
     private Weapon  equippedWeapon;
     private int health;
 
-    public Player(Hero hero) {
+    public Player(IHero hero) {
         this.hero = hero;
         this.level = 0;
         this.gold = 0;
@@ -42,10 +42,6 @@ public class Player {
         }
     }
 
-    public void setHero(Hero hero) {
-        this.hero = hero;
-    }
-
     public void setLevel(int level) {
         this.level = level;
     }
@@ -66,9 +62,6 @@ public class Player {
         this.health = health;
     }
 
-    public Hero getHero() {
-        return hero;
-    }
 
     public int getLevel() {
         return level;

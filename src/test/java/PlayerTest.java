@@ -1,3 +1,4 @@
+import Items.Food.Cheese;
 import Items.Weapon.Weapon;
 import Items.Weapon.WeaponType;
 import Player.Heros.Jerry;
@@ -6,18 +7,19 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 
 public class PlayerTest {
 
     Player player;
     Jerry jerry;
     Weapon weapon;
+    Cheese cheese;
 
     @Before
     public void before(){
+
         weapon = new Weapon(WeaponType.BROOM, 10);
-        jerry = new Jerry(5, 5, 5 );
+        jerry = new Jerry();
         player = new Player(jerry);
     }
 
@@ -43,6 +45,11 @@ public class PlayerTest {
         player.useAbility();
         assertEquals(1, player.inventoryCount());
     }
+
+//    @Test
+//    public void canEat(){
+//        player.eat();
+//    }
 
 
 

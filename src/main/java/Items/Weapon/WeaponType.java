@@ -1,14 +1,16 @@
 package Items.Weapon;
 
 public enum WeaponType {
-    SWORD(10),
-    DAGGER(5),
-    MACE(15);
+    PAN(10, "heavy"),
+    BROOM(5, "two-handed"),
+    PLATES(15, "ranged");
 
     private final int baseDamage;
+    private final String type;
 
-    WeaponType(int baseDamage) {
+    WeaponType(int baseDamage, String type) {
         this.baseDamage = baseDamage;
+        this.type = type;
     }
 
     public int getBaseDamage() {

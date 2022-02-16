@@ -1,7 +1,6 @@
 package Player;
 
 import Items.Food.Cheese;
-import Items.Food.Food;
 import Items.Food.IHeal;
 import Items.Item;
 import Items.Weapon.Weapon;
@@ -38,6 +37,7 @@ public class Player {
 
     public void eat(IHeal consumable){
         health += consumable.getHeal();
+        consumable.setQuantity(consumable.getQuantity() - 1);
     }
 
     public int inventoryCount(){

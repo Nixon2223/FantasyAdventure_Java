@@ -59,6 +59,7 @@ public class PlayerTest {
         Cheese cheese = new Cheese(3);
         player.eat(cheese);
         assertEquals(110, player.getHealth());
+        assertEquals(2, cheese.getQuantity());
     }
 
 

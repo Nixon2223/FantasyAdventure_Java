@@ -34,6 +34,7 @@ public class PlayerTest {
         player.equipWeapon(newWeapon);
         assertEquals(newWeapon, player.getEquippedWeapon());
         assertEquals(1, player.inventoryCount());
+
     }
 
 

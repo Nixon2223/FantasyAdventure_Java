@@ -1,6 +1,6 @@
 package Items.Weapon;
 
-public class Weapon {
+public class Weapon extends Item {
     private WeaponType weaponType;
     private int price;
 

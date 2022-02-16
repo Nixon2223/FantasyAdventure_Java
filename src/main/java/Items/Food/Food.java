@@ -1,11 +1,15 @@
 package Items.Food;
 
-public abstract class Food {
+import Items.Item;
+import Player.Player;
+
+public abstract class Food extends Item {
 
     private String type;
     private int quantity;
 
-    public Food(String type, int quantity) {
+    public Food(String type, int quantity, int price) {
+        super(price);
         this.type = type;
         this.quantity = quantity;
     }
@@ -26,6 +30,6 @@ public abstract class Food {
         this.quantity = quantity;
     }
 
-    public abstract void drink();
+    public abstract void eat(Player player);
 }
 

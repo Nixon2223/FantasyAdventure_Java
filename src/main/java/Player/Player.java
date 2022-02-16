@@ -1,8 +1,10 @@
 package Player;
 
+import Items.Food.Cheese;
 import Items.Item;
 import Items.Weapon.Weapon;
 import Player.Heros.Hero;
+import Player.Heros.Jerry;
 
 import java.util.ArrayList;
 
@@ -32,6 +34,12 @@ public class Player {
 
     public int inventoryCount(){
         return inventory.size();
+    }
+
+    public void useAbility(){
+        if (hero instanceof Jerry) {
+            this.inventory.add(new Cheese(3, 5));
+        }
     }
 
     public void setHero(Hero hero) {

@@ -6,6 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class PlayerTest {
 
@@ -35,6 +36,12 @@ public class PlayerTest {
         assertEquals(newWeapon, player.getEquippedWeapon());
         assertEquals(1, player.inventoryCount());
 
+    }
+
+    @Test
+    public void canUseHeroAbility(){
+        player.useAbility();
+        assertEquals(1, player.inventoryCount());
     }
 
 

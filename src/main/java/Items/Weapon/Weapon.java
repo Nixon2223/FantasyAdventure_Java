@@ -12,8 +12,8 @@ public class Weapon extends Item {
         this.weaponType = weaponType;
     }
 
-    public WeaponType getWeaponType() {
-        return weaponType;
+    public String getWeaponType() {
+        return weaponType.getType();
     }
 
     public int getPrice() {

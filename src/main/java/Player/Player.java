@@ -28,8 +28,10 @@ public class Player {
 
 
     public void equipWeapon(Weapon weapon){
-        if (this.equippedWeapon != null) this.inventory.add(this.equippedWeapon);
-        this.equippedWeapon = weapon;
+        if (this.hero.getWeaponTypes().contains(weapon.getWeaponType())) {
+            if (this.equippedWeapon != null) this.inventory.add(this.equippedWeapon);
+            this.equippedWeapon = weapon;
+        }
     }
 
     public int inventoryCount(){

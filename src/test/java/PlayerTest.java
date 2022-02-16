@@ -7,6 +7,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 
 public class PlayerTest {
 
@@ -38,6 +39,13 @@ public class PlayerTest {
         assertEquals(newWeapon, player.getEquippedWeapon());
         assertEquals(1, player.inventoryCount());
 
+    }
+
+    @Test
+    public void canNotEquipWeaponOfDifferentType(){
+        Weapon newWeapon = new Weapon(WeaponType.PAN, 10);
+        player.equipWeapon(newWeapon);
+        assertNull(player.getEquippedWeapon());
     }
 
     @Test

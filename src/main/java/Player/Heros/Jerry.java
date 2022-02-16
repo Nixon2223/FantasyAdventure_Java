@@ -16,7 +16,7 @@ public class Jerry implements IHero{
 
     public Jerry() {
         this.weaponTypes = new ArrayList<String>();
-        this.weaponTypes.add("broom");
+        this.weaponTypes.add("two-handed");
         this.strength = 5;
         this.agility = 7;
         this.defense = 10;

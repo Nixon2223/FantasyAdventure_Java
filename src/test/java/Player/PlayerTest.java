@@ -1,3 +1,5 @@
+package Player;
+
 import Items.Food.Cheese;
 import Items.Weapon.Weapon;
 import Items.Weapon.WeaponType;
@@ -63,6 +65,31 @@ public class PlayerTest {
 
     }
 
+    @Test
+    public void testInventoryStartsAt0() {
+        assertEquals(0, player.inventoryCount());
+    }
 
+    @Test
+    public void testPlayerLevelStartsAt0() {
+        assertEquals(0, player.getLevel());
+    }
+
+    @Test
+    public void testCanLevelUp() {
+        player.setLevel(1);
+        assertEquals(1, player.getLevel());
+    }
+
+    @Test
+    public void testPlayerCanLoseHealth() {
+        player.setHealth(90);
+        assertEquals(90, player.getHealth());
+    }
+
+    @Test
+    public void testGoldStartsAt0() {
+        assertEquals(0, player.getGold());
+    }
 
 }
